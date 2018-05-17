@@ -13,19 +13,19 @@
       ],
       "index": "index.html",
       "main": "main.ts",
-      "polyfills": "src/polyfills.ts",
-      "test": "src/test.ts",
-      "tsconfig": "src/tsconfig.app.json",
-      "testTsconfig": "src/tsconfig.spec.json",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "src/styles.css"
+        "styles.css"
       ],
       "scripts": [],
-      "environmentSource": "src/environments/environment.ts",
+      "environmentSource": "environments/environment.ts",
       "environments": {
-        "dev": "src/environments/environment.ts",
-        "prod": "src/environments/environment.prod.ts"
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
       }
     }
   ],
@@ -36,10 +36,10 @@
   },
   "lint": [
     {
-      "project": "src/tsconfig.app.json"
+      "project": "tsconfig.app.json"
     },
     {
-      "project": "src/tsconfig.spec.json"
+      "project": "tsconfig.spec.json"
     },
     {
       "project": "e2e/tsconfig.e2e.json"
