@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { EditorModule } from 'primeng/editor';
 
 export interface Point {
   x: number;
@@ -7,26 +6,16 @@ export interface Point {
 }
 
 @Component({
-  selector: 'app-my-app',
+  selector: 'my-app',
   templateUrl: './app.component.html',
   styleUrls: [ './app.component.css' ]
 })
 
 export class AppComponent  {
 
-  text1: string;
-  text2: string;
   name = 1;
-  points: Point[] = [];
 
   drawPoint (point: Point) {
-    this.name =  point.x + point.y + <number>this.name;
-    point.y = this.name;
-    this.points.push(point);
-    this.setClasses();
-  }
-
-  setClasses () {
-    return {color: name, acive: name};
+    this.name =  point.x + point.y + this.name;
   }
 }
