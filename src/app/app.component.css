@@ -1,3 +1,7 @@
 p {
   font-family: Lato;
 }
+
+.ui-widget .ui-editor-container {
+  width: 10% !important;
+}
